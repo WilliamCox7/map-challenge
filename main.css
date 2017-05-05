@@ -1,0 +1,21 @@
+.map {
+  background: slategray;
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+  border: solid;
+  width: 732px;
+  height: 486px;
+}
+
+#states_PNG, #map_PNG {
+  position: absolute;
+}
+
+#stateDisplay {
+  padding: 20px 0px;
+  color: white;
+  font-family: Arial;
+  position: absolute;
+  bottom: 0;
+}
