@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById('hoveredState').setAttribute('src', src);
       });
 
+      elements[i].addEventListener('mouseout', function() {
+        /* WHEN MOUSED OUT: remove the src attribute of the previously hovered-over image */
+        document.getElementById('hoveredState').removeAttribute('src');
+      });
+
       /* ADDS A CLICK LISTENER FOR EVERY ELEMENT */
       elements[i].addEventListener('click', function() {
         /* WHEN CLICKED: display the clicked state's abbreviation by the id "stateDisplay" */
@@ -19,5 +24,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
 
     }
-    
+
 });
