@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
 
       elements[i].addEventListener('mouseout', function() {
-        /* WHEN MOUSED OUT: remove the src attribute of the previously hovered-over image */
+        /* WHEN MOUSED OUT: remove the src attribute of the image by the id "hoveredState" */
         document.getElementById('hoveredState').removeAttribute('src');
       });
 
